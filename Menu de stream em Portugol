@@ -1,0 +1,47 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		escreva("1 - Abrir Netflix 2 - Abrir HBO 3 - Abrir Premiere - 5 - Sexy Prive - 4 Sair")
+		inteiro menu=0
+		inteiro idade=19
+	     escreva ("\n" + "Sua opção: ")
+		leia (menu)
+		
+		
+		se (menu==1) {
+			escreva ("OK, Abrindo Netflix")
+		}
+
+		se (menu==2) {
+			escreva ("OK, Abrindo HBO")
+		}
+
+		se (menu==3) {
+			escreva ("OK, Abrindo Premiere")
+		}
+          // Verificação de idade para canal adulto
+          se (menu==5) {
+          	escreva ("Conteúdo adulto, informe a sua idade: ") 
+          	
+          	leia (idade)
+          	se (idade<18) {
+          		escreva ("Você não pode abrir esse programa")
+          	}
+
+          	se (idade>=18){
+          		escreva ("OK, Abrindo Sexy Prive")
+          	}
+          	
+          }
+       
+		se (menu==4) {
+			escreva ("Saindo...")
+		}
+
+		
+
+		
+	}
+}
